@@ -1,121 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <title>Abhijeet Rastogi</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Abhijeet Rastogi</title>
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Barlow:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="img/profile.png" alt="Circular Image" class="circular-image">
-            <div class="header-text">
-                <h1>Abhijeet Rastogi</h1>
-                <div class="header-links">
-                    <a href="https://github.com/abhijeetrastogi">GitHub</a> |
-                    <a href="https://www.linkedin.com/in/rastogiabhijeet">LinkedIn</a> |
-                    <a href="mailto:abhirastogi800@gmail.com">Email</a>
-                </div>
-            </div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">ABHIJEET RASTOGI</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Work</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item">ML RESEARCHER</span><span class="ticker-item ticker-sep">✦</span>
+    <span class="ticker-item">GRAPHICS ENGINEER</span><span class="ticker-item ticker-sep">✦</span>
+    <span class="ticker-item">UC DAVIS MS CS</span><span class="ticker-item ticker-sep">✦</span>
+    <span class="ticker-item">VULKAN ENGINE DEV</span><span class="ticker-item ticker-sep">✦</span>
+    <span class="ticker-item">HARVARD MEDICAL AI</span><span class="ticker-item ticker-sep">✦</span>
+    <span class="ticker-item">CVPR RESEARCH</span><span class="ticker-item ticker-sep">✦</span>
+    <span class="ticker-item">ML RESEARCHER</span><span class="ticker-item ticker-sep">✦</span>
+    <span class="ticker-item">GRAPHICS ENGINEER</span><span class="ticker-item ticker-sep">✦</span>
+    <span class="ticker-item">UC DAVIS MS CS</span><span class="ticker-item ticker-sep">✦</span>
+    <span class="ticker-item">VULKAN ENGINE DEV</span><span class="ticker-item ticker-sep">✦</span>
+    <span class="ticker-item">HARVARD MEDICAL AI</span><span class="ticker-item ticker-sep">✦</span>
+    <span class="ticker-item">CVPR RESEARCH</span><span class="ticker-item ticker-sep">✦</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-main">
+    <div class="hero-stripe"></div>
+    <div>
+      <span class="hero-eyebrow">New Grad · Available June 2026</span>
+      <h1>ABHIJEET<br /><span class="hero-name-accent">RASTOGI</span></h1>
+      <p class="hero-sub">I build AI systems that see, reason, and create — from 3D GAN architectures at <strong>Harvard Medical School</strong> to a <strong>Vulkan rendering engine</strong> built entirely from scratch. Currently completing MS&nbsp;CS at UC&nbsp;Davis.</p>
+      <div class="hero-cta">
+        <a href="mailto:abhijeetrast@gmail.com" class="btn btn-black">Get in Touch ↗</a>
+        <a href="https://github.com/AbhijeetRastogi" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+        <a href="https://linkedin.com/in/rastogiabhijeet" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+      </div>
+    </div>
+    <div class="hero-footer">Davis, CA · Open to Remote or Relocation</div>
+  </div>
+  <div class="hero-sidebar">
+    <div class="stat-block"><div class="stat-num">78%</div><div class="stat-label">Annotation overhead reduced at UC Davis</div></div>
+    <div class="stat-block"><div class="stat-num">3+</div><div class="stat-label">Years of research experience</div></div>
+    <div class="stat-block"><div class="stat-num">2</div><div class="stat-label">IEEE &amp; CVPR publications</div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header"><span class="section-num">01 /</span><span class="section-title">ABOUT ME</span></div>
+  <div class="section-body">
+    <div class="about-grid">
+      <div class="about-box">
+        <p>I'm a software engineer with a rare dual focus: <strong>machine learning research</strong> and <strong>real-time computer graphics</strong>. Most engineers pick one lane — I build across both.</p>
+        <p>My work spans automated video annotation pipelines benchmarking Sora and Veo 3, 3D GAN architectures for reconstructive surgery at <strong>Harvard Medical School</strong>, and a VR simulation of the ISS at the <strong>University of Calgary NeuroLab</strong>.</p>
+        <p>I care about the craft: low-level systems, clean architecture, and building things that genuinely push what's possible.</p>
+      </div>
+      <div class="about-tags">
+        <div class="about-tag-item"><div class="about-tag-dot" style="background:var(--blue)"></div><span class="about-tag-text">Machine Learning &amp; Deep Learning Research</span></div>
+        <div class="about-tag-item"><div class="about-tag-dot" style="background:var(--green)"></div><span class="about-tag-text">Real-Time Graphics &amp; Game Engine Dev</span></div>
+        <div class="about-tag-item"><div class="about-tag-dot" style="background:var(--red)"></div><span class="about-tag-text">Computer Vision &amp; Medical Imaging</span></div>
+        <div class="about-tag-item"><div class="about-tag-dot" style="background:var(--yellow);border-color:var(--black)"></div><span class="about-tag-text">Generative Models · GANs · Diffusion</span></div>
+        <div class="about-tag-item"><div class="about-tag-dot" style="background:var(--black)"></div><span class="about-tag-text">MS CS · UC Davis · Class of 2026</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-header"><span class="section-num">02 /</span><span class="section-title">EXPERIENCE</span></div>
+  <div class="section-body">
+    <div class="exp-card">
+      <div class="exp-header">
+        <div class="exp-color-bar" style="background:var(--blue)"></div>
+        <div class="exp-header-inner">
+          <div><div class="exp-role">Research Contributor</div><div class="exp-org">University of California, Davis</div></div>
+          <div class="exp-date">Sep 2024 – Present</div>
         </div>
-    </header>
-    
+      </div>
+      <div class="exp-body"><ul class="exp-bullets">
+        <li>Co-authored a paper <strong>(under review at CVPR)</strong> benchmarking synthetic video generation via the ADGVE pipeline.</li>
+        <li>Engineered an automated annotation pipeline using <strong>SAM 2</strong> for 90+ videos (Sora, Pika, Veo 3).</li>
+        <li>Cut annotation time <strong>from 45 min → 10 min per video</strong> (78% reduction) via custom pixel-mask processing.</li>
+        <li>Resolved 24fps→30fps frame sync via interpolation; extracted insights from COCO-format JSON annotations.</li>
+      </ul></div>
+    </div>
+    <div class="exp-card">
+      <div class="exp-header">
+        <div class="exp-color-bar" style="background:var(--red)"></div>
+        <div class="exp-header-inner">
+          <div><div class="exp-role">Research Intern</div><div class="exp-org">Harvard Medical School — Brigham &amp; Women's Hospital</div></div>
+          <div class="exp-date">Feb – Jun 2024</div>
+        </div>
+      </div>
+      <div class="exp-body"><ul class="exp-bullets">
+        <li>Built a <strong>hybrid 3D GAN + U-Net</strong> in TensorFlow generating 3D surgical structures from DICOM medical images.</li>
+        <li>Designed end-to-end ML pipeline for medical dataset training, improving model convergence and data handling.</li>
+      </ul></div>
+    </div>
+    <div class="exp-card">
+      <div class="exp-header">
+        <div class="exp-color-bar" style="background:var(--green)"></div>
+        <div class="exp-header-inner">
+          <div><div class="exp-role">Research Intern — Mitacs Globalink</div><div class="exp-org">University of Calgary, NeuroLab</div></div>
+          <div class="exp-date">Jun – Sep 2023</div>
+        </div>
+      </div>
+      <div class="exp-body"><ul class="exp-bullets">
+        <li>Built a <strong>VR simulation of the ISS</strong> in Unity/C# with custom physics to study cognitive maps in microgravity.</li>
+        <li>Developed U-Net + OpenCV pipelines to analyse astronaut brain scans for white/grey matter growth patterns.</li>
+      </ul></div>
+    </div>
+    <div class="exp-card">
+      <div class="exp-header">
+        <div class="exp-color-bar" style="background:var(--yellow)"></div>
+        <div class="exp-header-inner">
+          <div><div class="exp-role">Research Assistant</div><div class="exp-org">SRM University, Chennai</div></div>
+          <div class="exp-date">Jun 2022 – Jun 2023</div>
+        </div>
+      </div>
+      <div class="exp-body"><ul class="exp-bullets">
+        <li>Co-authored a paper <strong>published in IEEE</strong> on age-based user classification via touch and motion sensor data.</li>
+        <li>Applied Random Forest and SVM to sensor data collected from a custom Android application.</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
 
-    <main>
-        <section id="about">
-            <p>Graduate student at the University of California, Davis, seeking an internship or part-time position to apply my skills in data science, machine learning, software development, and computer graphics, while contributing to academic and research projects.</p>
-        </section>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header"><span class="section-num">03 /</span><span class="section-title">PROJECTS</span></div>
+  <div class="section-body">
+    <div class="filter-row">
+      <button class="filter-btn active" onclick="filterProjects('all',this)">All</button>
+      <button class="filter-btn" onclick="filterProjects('ml',this)">ML / AI</button>
+      <button class="filter-btn" onclick="filterProjects('gfx',this)">Graphics</button>
+    </div>
+    <div class="projects-grid">
 
-        <section id="skills">
-            <h3>Skills</h3>
-            <p>Python, TensorFlow, PyTorch, Data Structures & Algorithms, Keras, Scikit-learn, SQL, Open-CV, Java, C, C++, C#, Unity3D</p>
-        </section>
-        <section id="experience">
-            <h2>Work Experience</h2>
-            <div class="experience-item">
-                <h3>CET HARVARD MEDICAL SCHOOL | Research Intern</h3>
-                <p>Feb 2024 - Jun 2024 | (HMS BWH) Boston, USA</p>
-                <ul>
-                    <li>Developed a 3D GAN architecture that generates detailed 3D structures from DICOM medical images, generating the structure before disease onset to assist in regenerative surgery.</li>
-                    <li>Designed a pipeline in Python using TensorFlow to efficiently test and train models on medical images. Combined U-Net and GAN to make a hybrid model.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>MITACS GLOBALINK CANADA | Research Intern</h3>
-                <p>Jun 2023 - Sep 2023 | (Psychology Department) Calgary, Canada</p>
-                <ul>
-                    <li>Worked on image segmentation on astronaut brain scan using U-net architecture and used Open-CV for prepossessing and augmentation. Helping in finding growth in white matter and gray matter.</li>
-                    <li>Developed a model to predict player emotions in a video game by integrating EEG, eye-tracking, and game state data.</li>
-                    <li>Conducted feature extraction and data augmentation on EEG signals to enhance the model's accuracy.</li>
-                </ul>
-            </div>
-        </section>
+      <div class="proj-card" data-track="ml">
+        <div class="proj-top">
+          <div class="proj-name">ReAlign</div>
+          <span class="proj-badge badge-ml">ML / AI</span>
+        </div>
+        <div class="proj-desc">Unsupervised framework quantifying LLM reasoning quality via semantic embeddings and dynamic programming. Fine-tuned DeepSeek-Math-7B to <strong>80.1% accuracy</strong> on Apple M4 Max and NVIDIA RTX 4060.</div>
+        <div class="proj-footer">
+          <div class="proj-tags"><span class="tag">PyTorch</span><span class="tag">MLX</span><span class="tag">LLMs</span><span class="tag">QLoRA</span></div>
+          <button class="proj-open-btn" onclick="openPanel('realign')">View ↗</button>
+        </div>
+      </div>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-item">
-                <h3>DRONE POSITIONING SYSTEM | Researcher</h3>
-                <p>Jul 2023</p>
-                <ul>
-                    <li>Developed a model using OpenCV and TensorFlow to position a drone above the target based on camera feed.</li>
-                    <li>Created a comprehensive dataset utilizing Unity and Blender, synthesizing 1,000+ diverse simulations; enhanced machine learning model performance by 30% while reducing data preparation time by 15 hours.</li>
-                </ul>
-            </div>
-        </section>
+      <div class="proj-card" data-track="ml">
+        <div class="proj-top">
+          <div class="proj-name">ACRONIM</div>
+          <span class="proj-badge badge-ml">ML / AI</span>
+        </div>
+        <div class="proj-desc">Interpretability system for LLaVA-1.5 with a custom Gradient×Concept method. React/D3.js dashboard visualizing concept activations, with faithfulness metrics deployed on AWS.</div>
+        <div class="proj-footer">
+          <div class="proj-tags"><span class="tag">React</span><span class="tag">LLaVA</span><span class="tag">AWS</span><span class="tag">D3.js</span></div>
+          <button class="proj-open-btn" onclick="openPanel('acronim')">View ↗</button>
+        </div>
+      </div>
 
-        <section id="research">
-            <h2>Research</h2>
-            <div class="research-item">
-                <h3>UNIVERSITY OF CALGARY, NEUROLAB | Researcher</h3>
-                <p>Jun 2023 - Sep 2023 | Calgary, Canada</p>
-                <p>Co-author in an ongoing research paper with Meaghan Walsh, Ford Burles and Prof. Giuseppe laria. Developed the virtual reality environment simulating the ISS to study cognitive maps in microgravity. Analyzed spatial tasks and mental rotation, revealing a strong link between mental rotation skills and faster navigation in microgravity.</p>
-            </div>
-            <div class="research-item">
-                <h3>SRM UNIVERSITY, CHENNAI | Researcher</h3>
-                <p>Jun 2022 - Jun 2023</p>
-                <p>Co-authored a paper published in IEEE with collaboration with Dr. Saad Yunus Sait on age-based user classification using touch and motion sensor data from smart devices. Developed a custom Android app for data collection in controlled and uncontrolled environments and applied machine learning algorithms to improve age-based prediction accuracy.</p>
-            </div>
-        </section>
+      <div class="proj-card" data-track="gfx">
+        <div class="proj-top">
+          <div class="proj-name">Vulkan 3D Engine</div>
+          <span class="proj-badge badge-gfx">Graphics</span>
+        </div>
+        <div class="proj-desc">Custom 3D game engine built from scratch. Dynamic lighting, PBR materials, shadow mapping via GLSL shaders, and a real-time ImGui debug overlay. Ongoing deep-dive into rendering pipelines.</div>
+        <div class="proj-footer">
+          <div class="proj-tags"><span class="tag">C++</span><span class="tag">Vulkan</span><span class="tag">GLSL</span><span class="tag">PBR</span></div>
+          <button class="proj-open-btn" onclick="openPanel('vulkan')">View ↗</button>
+        </div>
+      </div>
 
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>UNIVERSITY OF CALIFORNIA, DAVIS</h3>
-                <p>Masters in Computer Science | Sep 2024 - May 2026 | Davis, California</p>
-            </div>
-            <div class="education-item">
-                <h3>SRM UNIVERSITY, CHENNAI</h3>
-                <p>B.Tech in Computer Science | Sep 2020 - May 2024 | Chennai, India</p>
-            </div>
-        </section>
+      <div class="proj-card" data-track="ml">
+        <div class="proj-top">
+          <div class="proj-name">Snare Audio Gen</div>
+          <span class="proj-badge badge-ml">ML / AI</span>
+        </div>
+        <div class="proj-desc">Fine-tuned WaveGAN and DiffWave diffusion models to procedurally generate drum audio. Custom super-resolution architecture restoring high-frequency content, evaluated with KL divergence metrics.</div>
+        <div class="proj-footer">
+          <div class="proj-tags"><span class="tag">PyTorch</span><span class="tag">GANs</span><span class="tag">Diffusion</span></div>
+          <button class="proj-open-btn" onclick="openPanel('snare')">View ↗</button>
+        </div>
+      </div>
 
-        <section id="coursework">
-            <h2>Undergraduate Coursework</h2>
-            <ul>
-                <li>Design Pattern</li>
-                <li>Artificial Intelligence in Drug Discovery</li>
-                <li>Artificial Intelligence in Agile System</li>
-                <li>Operating Systems</li>
-                <li>Design And Analysis Of Algorithms</li>
-                <li>Computer Organization And Architecture</li>
-            </ul>
-        </section>
+      <div class="proj-card" data-track="gfx">
+        <div class="proj-top">
+          <div class="proj-name">Drone Positioning</div>
+          <span class="proj-badge badge-vision">Vision</span>
+        </div>
+        <div class="proj-desc">CV model guiding a drone to a target via live camera feed. 1,000+ synthetic Unity/Blender simulations boosted model accuracy by <strong>30%</strong> and saved 15 hours of data collection.</div>
+        <div class="proj-footer">
+          <div class="proj-tags"><span class="tag">TensorFlow</span><span class="tag">Unity</span><span class="tag">OpenCV</span></div>
+          <button class="proj-open-btn" onclick="openPanel('drone')">View ↗</button>
+        </div>
+      </div>
 
-        <section id="awards">
-            <h2>Awards/Events</h2>
-            <ul>
-                <li>Alberta Game Jam, Calgary (June 2023)</li>
-                <li>Prometeo'23, IIT Jodhpur & NVIDIA - 2nd position (Feb 2023)</li>
-                <li>Global Game Jam Honorable Mention (Jan 2023)</li>
-                <li>Hackathon SRM Cintel - 1/20 (May 2022)</li>
-                <li>Mayday Game Jam - Honorable Mention (May 2022)</li>
-                <li>Hackathon Coding Sprint - Finalist (April 2022)</li>
-            </ul>
-        </section>
-    </main>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-header"><span class="section-num">04 /</span><span class="section-title">SKILLS</span></div>
+  <div class="section-body">
+    <div class="skills-grid">
+      <div class="skill-col">
+        <div class="skill-col-header">Languages</div>
+        <div class="skill-item">Python</div><div class="skill-item">C++</div><div class="skill-item">C#</div>
+        <div class="skill-item">TypeScript / JS</div><div class="skill-item">Java</div>
+        <div class="skill-item">SQL</div><div class="skill-item">HTML / CSS</div>
+      </div>
+      <div class="skill-col">
+        <div class="skill-col-header">Machine Learning</div>
+        <div class="skill-item">PyTorch</div><div class="skill-item">TensorFlow / Keras</div>
+        <div class="skill-item">GANs &amp; Diffusion</div><div class="skill-item">LLMs &amp; Fine-tuning</div>
+        <div class="skill-item">OpenCV</div><div class="skill-item">MLX</div><div class="skill-item">Scikit-learn</div>
+      </div>
+      <div class="skill-col">
+        <div class="skill-col-header">Graphics / Games</div>
+        <div class="skill-item">Vulkan</div><div class="skill-item">OpenGL / GLSL</div>
+        <div class="skill-item">Unity3D</div><div class="skill-item">Unreal Engine</div>
+        <div class="skill-item">Godot</div><div class="skill-item">Blender</div><div class="skill-item">ImGui</div>
+      </div>
+      <div class="skill-col">
+        <div class="skill-col-header">Tools &amp; Cloud</div>
+        <div class="skill-item">Git / Docker</div><div class="skill-item">AWS</div>
+        <div class="skill-item">Azure</div><div class="skill-item">Linux / Bash</div>
+        <div class="skill-item">React</div><div class="skill-item">FastAPI</div><div class="skill-item">D3.js</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards">
+  <div class="section-header"><span class="section-num">05 /</span><span class="section-title">AWARDS &amp; PUBLICATIONS</span></div>
+  <div class="section-body">
+    <div class="awards-grid">
+      <div class="award-card featured"><span class="award-icon-row">📄</span><div class="award-title">CVPR Submission — Under Review</div><div class="award-meta">Benchmarking synthetic video generation — Sora, Pika, Veo 3</div></div>
+      <div class="award-card"><span class="award-icon-row">📰</span><div class="award-title">IEEE Publication</div><div class="award-meta">Age-based user classification · 2024</div></div>
+      <div class="award-card"><span class="award-icon-row">🥈</span><div class="award-title">Prometeo'23 — 2nd Place</div><div class="award-meta">IIT Jodhpur × NVIDIA National Festival</div></div>
+      <div class="award-card"><span class="award-icon-row">🥇</span><div class="award-title">SRM Cintel — 1st Place</div><div class="award-meta">1st of 20 teams · May 2022</div></div>
+      <div class="award-card"><span class="award-icon-row">🎮</span><div class="award-title">Global Game Jam</div><div class="award-meta">Honorable Mention · Jan 2023</div></div>
+      <div class="award-card"><span class="award-icon-row">🌐</span><div class="award-title">Mitacs Globalink Award</div><div class="award-meta">Competitive international research internship</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <div class="contact-eyebrow">06 / Contact</div>
+      <h2 class="contact-headline">LET'S BUILD SOMETHING.</h2>
+      <p class="contact-copy">Open to new grad ML engineering roles, research collaborations, and graphics/game dev positions. Based in Davis, CA — open to remote or relocation.</p>
+      <a href="mailto:abhijeetrast@gmail.com" class="btn btn-black">Send Email ↗</a>
+    </div>
+    <div class="contact-right">
+      <a href="mailto:abhijeetrast@gmail.com" class="contact-link email"><span>abhijeetrast@gmail.com</span><span>↗</span></a>
+      <a href="https://github.com/AbhijeetRastogi" target="_blank" rel="noopener" class="contact-link github"><span>github.com/AbhijeetRastogi</span><span>↗</span></a>
+      <a href="https://linkedin.com/in/rastogiabhijeet" target="_blank" rel="noopener" class="contact-link linkedin"><span>linkedin/rastogiabhijeet</span><span>↗</span></a>
+      <a href="tel:+16173318428" class="contact-link"><span>+1 617-331-8428</span><span>↗</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>Abhijeet Rastogi · MS CS UC Davis · 2026</span>
+  <div class="footer-dot"></div>
+  <span>Neo-Brutalist Portfolio</span>
+</footer>
+
+<!-- ═══════════════════════════════════
+     PANEL OVERLAY + PANEL
+════════════════════════════════════ -->
+<div class="panel-overlay" id="overlay" onclick="closePanel()"></div>
+
+<div class="panel" id="panel">
+  <div class="panel-header">
+    <div style="display:flex;align-items:center;gap:0.75rem;">
+      <span id="panel-header-badge" class="panel-badge" style="color:var(--yellow);border-color:var(--yellow);">ML / AI</span>
+      <span style="font-family:var(--font-mono);font-size:0.7rem;color:#aaa;letter-spacing:0.1em;text-transform:uppercase;">Project Detail</span>
+    </div>
+    <button class="panel-close" onclick="closePanel()">✕ Close</button>
+  </div>
+
+  <div class="panel-body">
+    <div class="panel-title" id="panel-title">Project</div>
+    <div class="panel-subtitle" id="panel-subtitle">Subtitle</div>
+
+    <!-- Gallery -->
+    <div class="panel-gallery" id="panel-gallery">
+      <div class="panel-gallery-main" id="panel-gallery-main"></div>
+      <div class="panel-gallery-grid" id="panel-gallery-grid"></div>
+    </div>
+
+    <!-- Overview -->
+    <div class="panel-section">
+      <div class="panel-section-title">Overview</div>
+      <div id="panel-overview"></div>
+    </div>
+
+    <!-- Key Results -->
+    <div class="panel-section">
+      <div class="panel-section-title">Key Results</div>
+      <ul class="panel-bullets" id="panel-results"></ul>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="panel-section">
+      <div class="panel-section-title">Tech Stack Deep-Dive</div>
+      <div id="panel-tech-desc" class="panel-text"></div>
+      <div class="tech-stack" id="panel-tech-stack"></div>
+    </div>
+  </div>
+
+  <div class="panel-footer" id="panel-footer"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
